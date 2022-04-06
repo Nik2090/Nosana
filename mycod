@@ -1,0 +1,16 @@
+struct {
+  float raw;
+  float filter;
+  int period;
+} temp;
+struct {
+  bool state;
+  bool flag;
+  int period;
+} btn;
+void setup() {}
+void loop() {
+  // обращение к элементам
+  temp.raw = sensorRead();
+  btn.raw = pinRead();
+}
